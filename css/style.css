@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  overflow-x: hidden;  
+}
+
+h1, h2{
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+
+/* Menu */
+header h1{
+  font-size: 5rem;
+  user-select:  none;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#logoImg{
+  margin-right: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  box-shadow: 0 1px 3px rgb(0,0,0, 0.3);
+  height: 100px;
+}
+
+.menu a#logo{
+    margin-right: 0px;
+}
+.menu a{
+  padding: 38px;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom .5s;
+  font-size: 25px;
+}
+.menu .active{
+  border-bottom: 8px solid #D5A843;
+  color: #D5A843;
+}
+.menu a#pags:hover{
+  border-bottom: 8px solid #D5A843;
+  color: #D5A843;
+}
+
+.menu a#logo:hover{
+    background-color: #000000;
+}
+
+
+/* Cards - Podemos Garantir e Serviços Oferecidos */
+.card{
+  background-color: white;
+  padding: 20px;
+  margin: 50px 0px 20px 0px;
+  border-radius: 5px;
+  
+}
+.card1{
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  text-align: center; 
+  font-size: 25px;
+}
+
+.card1 p{
+  margin-top: 0p;
+}
+.card2{
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  text-align: center; 
+  font-size: 25px;
+ 
+}
+.card p{
+  margin-top: 0px;
+}
+.card2 p{
+  margin-top: 0px;
+}
+
+.grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+/* Foto e texto inicial */
+.comeco{
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+  padding: 30px;  
+  font-family: 'Calibri light', sans-serif;
+}
+.comeco p{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 140px;
+    text-align: justify;
+    font-size: 25px;
+}
+.comeco button{
+    padding: 13px;
+    background-color: #083C57;
+    font-size: 19px;
+    color: white;
+    border-radius: 10px;
+    border: 10px solid  #083C57;
+    box-shadow:  4px 4px 10px #A6A6A6;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.comeco button:hover{  
+    background-color:  #06293B;
+    border: 10px solid  #06293B;
+    color: white;
+    box-shadow:  4px 4px 10px #8B8C8D;
+    
+}
+#tamanho img {
+    width: 100%; 
+}
+#cor{
+  color: #D5A843;
+}
+
+
+/* Serviços Oferecidos */
+h1#servicoH1{
+  margin-top: 96px;
+}
+
+#servico{
+  height: 300px;
+  background-image: url('../images/servico1.png');
+  background-size: 150%;
+  color: #D5A843;
+  text-shadow: 0 0 4px #000000;
+  transition: box-shadow .5s;
+  cursor: pointer;
+  border-bottom: 15px solid #D5A843;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+}
+
+#servico2{
+  height: 300px;
+  background-image: url('../images/servico2.png');
+  background-size: 150%;
+  color: #D5A843;
+  text-shadow: 0 0 4px #000000;
+  transition: box-shadow .5s;
+  cursor: pointer;
+  border-bottom: 15px solid #D5A843;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+}
+
+#servico3{
+  height: 300px;
+  background-image: url('../images/servico3.png');
+  background-size:  100%;
+  color: #D5A843;
+  text-shadow: 0 0 4px #000000;
+  transition: box-shadow .5s;
+  cursor: pointer;
+  border-bottom: 15px solid #D5A843;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+}
+
+/*gif*/
+.eng{
+  margin: 100px;  
+}
+
+/* Ícone do zap */
+#icone{
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  height: 100px;
+  width: 250px;
+}
+#icone a{
+  text-decoration: none;
+}
+#icone img{
+  position: absolute;
+  right: 10px;
+  width: 75px;
+  border-radius: 50%;
+}
+#icone img:hover + #msg{
+  opacity: 1;
+}
+
+#msg{
+  background-color: #25d365;
+  height: 63px;
+  color: white;
+  border-radius: 16px;
+  left: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s;
+  text-shadow: 1px 1px 4px #000000;
+}
+#msg p{
+  margin: 0;
+}
+
+/* Rodape */
+.rodape{
+  height: 200px; 
+  background-color: #242E32; 
+  color: white;   
+  text-align: center; 
+  padding-bottom: 10px; 
+  letter-spacing: 0.7px; 
+  text-shadow: 2px 2px 4px #000000;
+}
+.lista_rodape{
+  list-style-type: none; 
+  padding: 0px;
+}
+.lista_rodape img{
+  width: 1%; margin-right: 3px;
+}
+
+
+
+
+
+
+/* Ajustes */
+@media screen and (max-width: 955px){
+  #servico{
+    height: 280px;
+    background-size: 400px;
+  }
+  #servico2{
+    height: 280px;
+    background-size: 400px;
+  }
+   #servico3{
+    height: 280px;
+    background-size: 400px;
+  }
+  h1#servicoH1{
+    margin-top: 50px;
+  }
+  div#servico2 h1{
+    margin-top: 75px;
+  }
+   div#servico3 h1{
+    margin-top: 75px;
+  }
+  .comeco{
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .comeco p{
+    vertical-align: top;
+    width: 60%;
+    margin-top: 0px;
+  }
+  
+  .card1 p{
+    font-size: 20px;
+  }
+  .card2 p{
+    font-size: 20px;
+  }
+  #tamanho img {
+    width: 70%; 
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 800px){
+  .coluna-esquerda{
+    width: 100%;
+  }
+  .coluna-direita{
+    width: 100%;
+  }
+  header h1{
+    font-size: 3rem;
+  }
+  #logoImg{
+    width: 70px;
+  }
+  .comeco p{
+    vertical-align: top;
+    width: 60%;
+    margin-top: 70px;
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  #tamanho img {
+    width: 70%;
+  }
+  .eng {
+    margin: 30px;
+  }
+   .card1 p{
+    font-size: 17px;
+  }
+  .card2 p{
+    font-size: 17px;
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+
+}
+
+
+@media screen and (max-width: 695px){
+  #servico{
+    height: 280px;
+    background-size: 250%;
+  }
+  #servico2{
+    height: 280px;
+    background-size: 250%;
+  }
+  #servico3{
+    height: 280px;
+    background-size: 250%;
+  }
+  .comeco p{
+    vertical-align: top;
+    width: 80%;
+    margin-top: 70px;
+    font-size: 25px;
+    
+  }
+  eng {
+    margin: 100px;
+  }
+   .card1 p{
+    font-size: 17px;
+  }
+  .card2 p{
+    font-size: 17px;
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+
+}
+
+@media screen and (max-width: 675px){
+  .menu, .menu a{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .menu{
+    height: 370px;
+  }
+  .menu a{
+    padding: 14px;
+  }
+  
+  .menu a#logo{
+    margin-right: 0px;
+  }
+  #servico{
+    height: 280px;
+    background-size: 250%;
+  }
+  #servico2{
+    height: 280px;
+    background-size: 230%;
+  }
+  #servico3{
+    height: 280px;
+    background-size: 230%;
+  }
+  .comeco p{
+    vertical-align: top;
+    width: 80%;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .comeco{
+    margin-top: 0px;
+  }
+  .comeco button{
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 50px;
+    
+  }
+  eng {
+    margin: 100px;
+  }
+   .card1 p{
+    font-size: 17px;
+  }
+  .card2 p{
+    font-size: 17px;
+  }
+  .card1 .card{
+        margin-top: 0px;
+  }
+  .card2{
+        padding-bottom: 50px;
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+  
+  
+
+
+}

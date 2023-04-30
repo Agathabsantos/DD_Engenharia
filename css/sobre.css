@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  overflow-x: hidden;  
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+/* Menu */
+header h1{
+  font-size: 5rem;
+  user-select:  none;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#logoImg{
+  margin-right: 10px;
+  pointer-events: none;
+  user-select: none;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  box-shadow: 0 1px 3px rgb(0,0,0, 0.3);
+  height: 100px;
+}
+
+.menu a#logo{
+    margin-right: 0px;
+}
+.menu a{
+  padding: 38px;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom .5s;
+  font-size: 25px;
+}
+.menu .active{
+  border-bottom: 8px solid #D5A843;
+  color: #D5A843;
+}
+.menu a#pags:hover{
+  border-bottom: 8px solid #D5A843;
+  color: #D5A843;
+}
+
+.menu a#logo:hover{
+    background-color: #000000;
+}
+header{
+  margin-bottom: 40px;
+}
+
+
+/* Foto e texto  */
+.comeco{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: 'Calibri light', sans-serif;
+}
+.comeco p{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 160px;
+    text-align: justify;
+    font-size: 25px;
+}
+#tamanho img {
+    width: 100%; 
+}
+#cor{
+  color: #D5A843;
+}
+
+/* Cards - Podemos Garantir e Serviços Oferecidos */
+.card{
+  background-color: #083C57;
+  padding: 20px;
+  margin: 20px 30px 40px 40px;
+  border-radius: 20px;
+  box-shadow: -15px -15px   #D5A843;
+}
+.card1{
+  background-color: white;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  text-align: center; 
+  font-size: 25px;
+  margin-bottom: 400px;
+}
+
+.card1 p{
+  margin-top: 0p;
+  color: white;
+  
+  font-family: 'Calibri light', sans-serif;
+}
+.card p{
+  margin-top: 0px;
+}
+
+.card h1{
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 4px #000000;
+
+}
+
+.grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+
+
+
+
+/* Rodape */
+.rodape{
+  height: 200px; 
+  background-color: #242E32; 
+  color: white;   
+  text-align: center; 
+  padding-bottom: 10px; 
+  letter-spacing: 0.7px; 
+  text-shadow: 2px 2px 4px #000000;
+}
+.lista_rodape{
+  list-style-type: none; 
+  padding: 0px;
+}
+.lista_rodape img{
+  width: 1%; margin-right: 3px;
+}
+
+
+
+
+
+/* Ajustes */
+@media screen and (max-width: 955px){
+   .comeco{
+    display: inline-block;
+    text-align: center;
+  }
+  .comeco ul{
+    vertical-align: top;
+    width: 60%;
+    font-size: 30px;
+  }
+  #tamanho img {
+    width: 70%; 
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .comeco p{
+    vertical-align: top;
+    width: 60%;
+    margin-top: 70px;
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  #tamanho img {
+    width: 70%;
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+}
+
+@media screen and (max-width: 695px){
+  .comeco p{
+    vertical-align: top;
+    width: 80%;
+    margin-top: 70px;
+    font-size: 25px;
+
+  }
+  
+}
+
+@media screen and (max-width: 675px){
+  .menu, .menu a{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .menu{
+    height: 370px;
+  }
+  .menu a{
+    padding: 14px;
+  }
+  
+  .menu a#logo{
+    margin-right: 0px;
+  }
+  .comeco p{
+    vertical-align: top;
+    width: 80%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    
+  }
+  .lista_rodape img{
+    width: 2%;
+  }
+}
