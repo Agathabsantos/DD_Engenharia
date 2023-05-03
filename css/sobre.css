@@ -144,6 +144,10 @@ header{
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.final{
+  background-color: #1C2427; 
+  padding: 10px;
+}
 
 
 
